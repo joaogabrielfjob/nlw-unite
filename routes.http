@@ -2,7 +2,27 @@ POST http://localhost:7777/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
-  "details": "Um evento para quem é apaixonado por programação",
-  "maximumAttendees": 100
+  "title": "Novo evento",
+  "details": null,
+  "maximumAttendees": 1
 }
+
+###
+
+POST http://localhost:7777/events/bb0a9af3-4f96-4cfe-95ef-8a8155fefadb/attendees
+Content-Type: application/json
+
+{
+  "name": "Diego Fernandes",
+  "email": "diego@rocketseat.com.br"
+}
+
+###
+
+GET http://localhost:7777/events/5718beda-e654-409c-9558-0ec79f53c962
+
+###
+
+GET http://localhost:7777/attendee/1/badge
+
+###
