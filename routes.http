@@ -2,14 +2,14 @@ POST http://localhost:7777/events
 Content-Type: application/json
 
 {
-  "title": "Novo evento",
+  "title": 123,
   "details": null,
   "maximumAttendees": 1
 }
 
 ###
 
-POST http://localhost:7777/events/bb0a9af3-4f96-4cfe-95ef-8a8155fefadb/attendees
+POST http://localhost:7777/events/3c9e0dcb-39b4-4e08-874d-899f9410b4fe/attendees
 Content-Type: application/json
 
 {
@@ -19,10 +19,18 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:7777/events/5718beda-e654-409c-9558-0ec79f53c962
+GET http://localhost:7777/events/3c9e0dcb-39b4-4e08-874d-899f9410b4fe
 
 ###
 
-GET http://localhost:7777/attendee/1/badge
+GET http://localhost:7777/attendees/1/badge
+
+###
+
+GET http://localhost:7777/attendees/3/check-in
+
+###
+
+GET http://localhost:7777/events/5718beda-e654-409c-9558-0ec79f53c962/attendees
 
 ###
